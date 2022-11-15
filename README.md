@@ -1,9 +1,7 @@
 # Key-Click
 A program that makes arrow keys act like mouse buttons
 
-
-![screenshot](https://user-images.githubusercontent.com/40371578/178462409-c3271caf-f9e2-4fce-9eb8-132f23b5dffb.png)
-
+![screenshot](https://user-images.githubusercontent.com/40371578/202002959-90bf250d-bca1-4320-aa43-4f8a0e21b273.png)
 
 ## Downloading
 Prebuilt program is available under Releases
