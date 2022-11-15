@@ -1,2 +1,0 @@
-Generate executable:
-pyinstaller "key-click-v1.py" --upx-dir "__upx_dir__" --noconsole --icon "key-click-icon.ico" --onefile --add-data "key-click-icon.ico;." --clean --key "_key_" --name "Key-Click-v1"
