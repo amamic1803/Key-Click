@@ -1,6 +1,6 @@
 import os
 import sys
-from tkinter import *
+import tkinter as tk
 
 import keyboard
 import mouse
@@ -56,22 +56,22 @@ def main():
 	global stat
 	stat = [False, False, False]  # left - 0 | middle - 1 | right - 0
 
-	root = Tk()
+	root = tk.Tk()
 	root.resizable(False, False)
 	root.geometry(f"250x125+{root.winfo_screenwidth() // 2 - 125}+{root.winfo_screenheight() // 2 - 62}")
 	root.title("Key-Click")
-	root.iconbitmap(resource_path("data/key-click-icon.ico"))
+	root.iconbitmap(resource_path("resources/key-click-icon.ico"))
 	root.config(background="#ffffff")
 
-	title = Label(root, background="#ffffff", activebackground="#ffffff", foreground="#000000", activeforeground="#000000", text="Key-Click", font=("Helvetica", 23, "italic", "bold"))
+	title = tk.Label(root, background="#ffffff", activebackground="#ffffff", foreground="#000000", activeforeground="#000000", text="Key-Click", font=("Helvetica", 23, "italic", "bold"))
 	title.place(x=0, y=0, width=250, height=65)
 
-	instructions = Label(root, background="#ffffff", activebackground="#ffffff",
-	                     foreground="#000000", activeforeground="#000000",
-	                     text="left arrow key = left mouse button\n"
-	                          "right arrow key = right mouse button\n"
-	                          "down arrow key = middle mouse button",
-	                     font=("Helvetica", 9, "italic", "bold"))
+	instructions = tk.Label(root, background="#ffffff", activebackground="#ffffff",
+	                        foreground="#000000", activeforeground="#000000",
+	                        text="left arrow key = left mouse button\n"
+	                             "right arrow key = right mouse button\n"
+	                             "down arrow key = middle mouse button",
+	                        font=("Helvetica", 9, "italic", "bold"))
 	instructions.place(x=0, y=60, width=250, height=65)
 
 	keyboard.on_press_key("Left", lambda event: s(0), suppress=True)
